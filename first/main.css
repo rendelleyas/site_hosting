@@ -1,0 +1,215 @@
+  
+    *{
+        font-family: Arial;
+    }
+    .container{
+        margin: 0 1in 0 1in;
+    }
+    
+    /* Adjust */
+    .header{
+        display: grid;
+        /* grid-template-columns: repeat(3,1fr); */
+        grid-template-columns:1fr 6fr;
+        grid-auto-rows: 100px;
+        grid-row-gap:1em;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    .box1{
+        grid-template-columns: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+    .header-son{
+        display: grid;
+        grid-template-rows:1fr 1fr
+    }
+
+    .header-son > div {
+        margin: 0 10px -20px 10px;
+    }
+
+    .header-gson{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .header-gson-son{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-gap:1em;
+    }
+    .header-gson-son > div{
+        border:#333 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 10px;
+    }
+
+    .h-below{
+        display: grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-gap:2em;
+        padding: 0px;
+        justify-self: end;
+    }
+
+    .h-below .low{
+        align-self: end;
+    }
+
+    .b-left{
+        border-right: #333 2px solid;
+    }
+   /* NAVIGATION/ 2nd Container */
+   .nav{
+       display: grid;
+       grid-template-rows: auto;
+       grid-row-gap:1em;
+   }
+
+    .nav-header{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        list-style-type: none;
+        margin-top: 2em;
+        border: #333 1px solid;
+        padding: 10px;
+    }
+
+    .nav-header > li {
+        font-size: 20px;
+        /* border: #333 1px solid */
+    }
+
+    .nav-body{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .nav-body > div >img {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+/* CONTENT */
+    .content{
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+        grid-column-gap:1em;
+    }
+    
+    .content > .headline{
+        border: #333 1px solid;
+        
+    }
+
+    .headline{
+        display: grid;
+        grid-template-rows: auto;
+        grid-row-gap:1em;
+        border-radius: 5px;
+    }
+    .headline > div{
+        margin: 5px;
+    }
+    .headline .head{
+        border: #333 1px solid;
+        padding: 5px;
+    }
+
+    .headline  .body{
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center > div{
+        border: #333 1px solid;
+        padding: 5px 15px 5px 15px;
+        border-radius: 5px;
+        background-color: rgb(230, 221, 221);
+        margin: .5in;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .news {
+        display: flex;
+        margin: 5px;
+        flex-direction: row;   
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news > div {
+        margin: 1em;
+    }
+
+    .reviews{
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+
+
+    /* Side part */
+    .sideline >  .title{
+        border: #333 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(230, 221, 221);
+        justify-content: center;
+        align-items: center;
+    }
+    .sideline > div {
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+    }
+    .sideline .body{
+        border: #333 1px solid;
+        padding: 10px;
+    }
+     .body  .title{
+        border: #333 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(230, 221, 221);
+        justify-content: center;
+        align-items: center;
+    }
+    .sideline a{
+        margin: auto;
+    }
+
+
+    
+/* FOOTER */
+    footer {
+        margin: 20px 1in 0 1in;
+        border-top: 2px #000000 solid;
+    }
+
+    footer > ul, .trademark{
+        overflow: hidden;  
+        list-style-type: none; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    footer >ul >li{
+        float: left;
+        margin: 10px;
+    }
